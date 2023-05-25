@@ -1,0 +1,37 @@
+include <stdio.h>
+
+int main() {
+
+char str[20],ch;
+
+int spl,lwr,i;
+
+i=spl=lwr=0;
+
+    printf("Enter string");
+
+    gets(str);
+
+    while(str[i]!='\0')
+
+    {
+
+        ch=str[i];
+
+        if(ch>='a' && ch<='z')
+
+        lwr++;
+
+        else
+
+        spl++;
+
+        i++;
+
+    }
+
+printf("lower letters are %d \n Special characters are %d ",lwr,spl);
+
+    return 0;
+
+}
